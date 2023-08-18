@@ -2,7 +2,7 @@ import React from 'react';
 
 import Image from '../assets/pic.jpg'
 
-import {FaGithub, FaYoutube, FaDribbble} from 'react-icons/fa'
+import {FaGithub} from 'react-icons/fa'
 
 import {TypeAnimation} from 'react-type-animation'
 
@@ -61,7 +61,7 @@ const Banner = () => {
             viewport={{once: false, amount:0.7}} 
             className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0 '>
             <button className='btn btn-lg'>Contact me</button>
-            <a href='#' className='text-gradient btn-link'>
+            <a href="/" className='text-gradient btn-link'>
               My Portfolio
             </a>
           </motion.div>
@@ -71,7 +71,7 @@ const Banner = () => {
             whileInView={'show'} 
             viewport={{once: false, amount:0.7}} 
             className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
-            <a href='#'>
+            <a href='https://github.com/Yowzel'>
               <FaGithub/>
             </a>
           </motion.div>
