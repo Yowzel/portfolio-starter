@@ -32,11 +32,11 @@ const Banner = () => {
             className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
             <span className='text-white mr-4'>I am a</span>
             <TypeAnimation sequence={[
-              'Developer', 
+              'Software Developer', 
               2000,
-              'Engineer', 
+              'Machine Learning Engineer', 
               2000,
-              'Analyst', 
+              'Data Analyst', 
               2000,
               ]}
               speed={50}
