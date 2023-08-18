@@ -4,6 +4,8 @@ import Image from '../assets/pic.jpg'
 
 import {FaGithub} from 'react-icons/fa'
 
+import {Link} from 'react-scroll'
+
 import {TypeAnimation} from 'react-type-animation'
 
 import {motion} from 'framer-motion'
@@ -60,10 +62,14 @@ const Banner = () => {
             whileInView={'show'} 
             viewport={{once: false, amount:0.7}} 
             className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0 '>
-            <button className='btn btn-lg'>Contact me</button>
-            <a href="/" className='text-gradient btn-link'>
-              My Portfolio
-            </a>
+            <Link to='contact' activeClass='active'
+            smooth={true}
+            spy={true}
+            offset={-200}><button className='btn btn-lg' >Contact me</button></Link>
+          <Link to='work'  activeClass='active'
+            smooth={true}
+            spy={true}
+            offset={-200}> <a href='#' className='text-gradient btn-link'>My Portfolio</a></Link>
           </motion.div>
           <motion.div 
             variants={fadeIn('up', 0.7)} 

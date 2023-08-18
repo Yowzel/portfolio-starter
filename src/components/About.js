@@ -3,6 +3,7 @@ import React from 'react';
 import { useInView } from 'react-intersection-observer';
 
 import { motion } from 'framer-motion';
+import {Link} from 'react-scroll'
 
 import { fadeIn } from '../variants';
 const About = () => {
@@ -44,8 +45,14 @@ const About = () => {
           </motion.div>
         </div>
         <div className='flex gap-x-8 items-center justify-center'>
-          <button className='btn btn-lg'>Contact me</button>
-          <a href='#' className='text-gradient btn-link'>My Portfolio</a>
+          <Link to='contact' activeClass='active'
+            smooth={true}
+            spy={true}
+            offset={-200}><button className='btn btn-lg' >Contact me</button></Link>
+          <Link to='work'  activeClass='active'
+            smooth={true}
+            spy={true}
+            offset={-200}> <a href='#' className='text-gradient btn-link'>My Portfolio</a></Link>
         </div>
       </div>
     </section>;
